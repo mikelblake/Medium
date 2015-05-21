@@ -83,11 +83,6 @@ h3 {
 	font-family: "Times New Roman", serif;
 }
 
-/*@media (min-width: 600px) {
-	.search-icon {
-  	display: none;
-  }
-}*/
 blockquote {
 	font-style: italic;
 	border-left: 3px solid black;
@@ -107,14 +102,28 @@ a {
 	font-weight: bold;
 }
 
+.no-display {
+	display: none;
+}
+
+.icon-box {
+	width: 30px;
+	height: 30px;
+}
+
 @media (max-width: 700px) {
   .search-bar {
-  	flex: 0;	
+  	flex: initial;
+  	padding: 4px;
   }
+
   input {
   	display: none;
   }
   .wrapper {
   	width: 90%;
+  }
+  .no-display {
+  	display: block;
   }
 }
