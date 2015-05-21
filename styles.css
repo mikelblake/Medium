@@ -26,6 +26,8 @@ header {
 .mash-icon {
 	flex: 3;
 	font-size: 30px;
+	padding: 13px;
+	font-weight: bold;
 }
 
 .tut-image {
