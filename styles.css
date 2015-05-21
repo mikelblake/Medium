@@ -34,6 +34,9 @@ header {
 
 .tut {
 	flex: 2;
+	font-size: 11px;
+	margin: 10px 0;
+	padding-top: 8px;
 }
 
 .search-bar {
@@ -43,6 +46,7 @@ header {
 	height: 38px;
 	text-align: center;
 	margin: 10px;
+	padding-top: 9px;
 }
 
 .signin-btn {
@@ -53,15 +57,20 @@ header {
 	text-align: center;
 	margin: 10px;
 	font-size: 14px;
-	padding: 0 16px;
+	padding: 10px 16px;
 	color: green;
 }
 
-.search-icon {
+.no-border {
+	border: 0;
+	text-align: center;
+}
+
+/*.search-icon {
 	border: solid 1px gray;
 	border-radius: 50px;
 	height: 38px;
-}
+}*/
 
 h2 {
 	font-family: Gerogia, Cambria, "Times New Roman", Times, serif;
@@ -69,15 +78,43 @@ h2 {
 	font-weight: 700;
 }
 
-@media (max-width: 500px) {
+h3 {
+	font-size: 36px;
+	font-family: "Times New Roman", serif;
+}
+
+/*@media (min-width: 600px) {
 	.search-icon {
   	display: none;
   }
+}*/
+blockquote {
+	font-style: italic;
+	border-left: 3px solid black;
+	margin-left: -23px;
+	padding-left: 20px;
+	font-size: 22px;
+	font-family: "Times New Roman";
 }
 
-@media (min-width: 500px) {
+.not-first {
+	padding-top: 30px; 
+	margin-top: -30px;
+}
+
+a {
+	color: black;
+	font-weight: bold;
+}
+
+@media (max-width: 700px) {
   .search-bar {
+  	flex: 0;	
+  }
+  input {
   	display: none;
   }
-
+  .wrapper {
+  	width: 90%;
+  }
 }
